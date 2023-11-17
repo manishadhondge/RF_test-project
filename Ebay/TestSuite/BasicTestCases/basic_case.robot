@@ -9,6 +9,7 @@ Test Teardown     CommonFunctionality.Stop browser
 TC1: Userdefiend keywords in resources file
 
    UserDefinedKeywords.Search text
+   test
 
 
 
