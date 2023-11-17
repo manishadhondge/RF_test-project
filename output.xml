@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230711 22:05:05.956" rpa="false" schemaversion="3">
+<suite id="s1" name="TC3-user defined keywords in resource file" source="/Users/manishadhondge/PycharmProjects/test_robot/Ebay/TestSuite/TC3-user defined keywords in resource file.robot">
+<test id="s1-t1" name="TC1: Basic search case with user defined keywords in resources file" line="11">
+<kw name="Start browser" library="Commonfunctionality">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.ebay.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230711 22:05:06.015" level="INFO">Opening browser 'Chrome' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20230711 22:05:06.015" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230711 22:05:06.015" endtime="20230711 22:05:09.315"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230711 22:05:09.315" endtime="20230711 22:05:09.802"/>
+</kw>
+<status status="PASS" starttime="20230711 22:05:06.015" endtime="20230711 22:05:09.802"/>
+</kw>
+<kw name="input serch text" library="UserDefined keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=gh-ac</arg>
+<arg>Car</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230711 22:05:09.803" level="INFO">Typing text 'Car' into text field 'id=gh-ac'.</msg>
+<status status="PASS" starttime="20230711 22:05:09.803" endtime="20230711 22:05:09.892"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=gh-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230711 22:05:09.892" level="INFO">Clicking button 'id=gh-btn'.</msg>
+<status status="PASS" starttime="20230711 22:05:09.892" endtime="20230711 22:05:10.365"/>
+</kw>
+<status status="PASS" starttime="20230711 22:05:09.802" endtime="20230711 22:05:10.365"/>
+</kw>
+<kw name="Verify the result" library="UserDefined keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Car</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230711 22:05:13.998" level="INFO">Current page contains text 'Car'.</msg>
+<status status="PASS" starttime="20230711 22:05:10.365" endtime="20230711 22:05:13.998"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230711 22:05:23.999" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230711 22:05:13.998" endtime="20230711 22:05:23.999"/>
+</kw>
+<status status="PASS" starttime="20230711 22:05:10.365" endtime="20230711 22:05:24.000"/>
+</kw>
+<kw name="Stop browser" library="Commonfunctionality">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230711 22:05:24.001" endtime="20230711 22:05:24.104"/>
+</kw>
+<status status="PASS" starttime="20230711 22:05:24.001" endtime="20230711 22:05:24.104"/>
+</kw>
+<status status="PASS" starttime="20230711 22:05:06.014" endtime="20230711 22:05:24.104"/>
+</test>
+<status status="PASS" starttime="20230711 22:05:05.957" endtime="20230711 22:05:24.104"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC3-user defined keywords in resource file">TC3-user defined keywords in resource file</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
