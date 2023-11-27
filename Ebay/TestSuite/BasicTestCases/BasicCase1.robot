@@ -9,7 +9,7 @@ Library    SeleniumLibrary
 Tc1:basic case
     Start browser
     Search text
-    Stop
+    Stop Case
 
 
 *** Keywords ***
@@ -23,7 +23,7 @@ Search text
     Page Should Contain    mobile
     Sleep    3sec
 
-Stop
+Stop Case
     Close Browser
     
 

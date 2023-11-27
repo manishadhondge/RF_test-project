@@ -6,5 +6,5 @@ Library     SeleniumLibrary
 
 *** Keywords ***
 SerachResult
-    page should contain  mobile
+    page should contain  Car
     sleep   5s

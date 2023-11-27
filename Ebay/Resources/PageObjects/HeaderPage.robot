@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 *** Keywords ***
 
 Basic Search
-    input text  id:gh-ac    Mobile
+    input text  id:gh-ac    Car
     click button  id:gh-btn
 
 AdvancedSerach

@@ -3,7 +3,8 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Start browser
-    open browser  https://www.ebay.com/     Chrome
+    Open Browser    https://www.ebay.com/    chrome
+    Maximize Browser Window
 
-Stop browser
-    close browser
+Stop Browser
+    Close Browser
